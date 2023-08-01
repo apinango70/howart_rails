@@ -1,2 +1,26 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<div class="container">
+  <%= image_tag "banner.png" %>
+</div>
+
+<h1>Harry Potter Characters List</h1>
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Character</th>
+      <th>Location</th>
+      <th>House</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @characters.each do |character| %>
+      <tr>
+        <td><%= character.name %></td>
+        <td><%= character.location %></td>
+        <td><%= character.house %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
