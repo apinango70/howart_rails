@@ -1,9 +1,8 @@
 
 .container {
 
-  height: 20rem; /* Altura del contenedor */
+  height: 20rem;
 }
-
 
 .container img {
   position: absolute;
@@ -12,9 +11,8 @@
   transform: translate(-50%, -50%); /* Centrar tanto horizontal como verticalmente */
 }
 
-
-
 h1 {
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   padding-bottom: 50px;
   text-transform: uppercase;
